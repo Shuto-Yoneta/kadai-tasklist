@@ -13,6 +13,9 @@
         @include('commons.navbar')
 
         <div class="container">
+            {{-- バリデーションエラー --}}
+            @include('commons.error_messages')
+            
             @yield('content')
         </div>
 
