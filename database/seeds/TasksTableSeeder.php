@@ -11,10 +11,11 @@ class TasksTableSeeder extends Seeder
      */
     public function run()
     {
-        for($i = 1; $i <= 25; $i++) {
+        for($i = 2; $i <= 25; $i++) {
             DB::table('tasks')->insert([
-                'status' => 'status ' . $i,
-                'content' => 'test content ' . $i
+                // 'status' => '実施中 ' . $i,
+                'status' => '実施済 ',
+                'content' => '動作確認テスト ' . $i
             ]);
         }
     }
